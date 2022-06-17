@@ -10,3 +10,5 @@ const execute = async () => {
 }
 
 execute()
+
+module.exports = execute
