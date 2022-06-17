@@ -4,9 +4,9 @@ if (process.env.NODE_ENV !== 'production') {
 const productController = require('./controller/product-controller')
 
 const execute = async () => {
-  productController.addNewTrace()
-  productController.deleteTrace()
-  productController.searchAndCompare()
+  await productController.addNewTrace()
+  await productController.deleteTrace()
+  await productController.searchAndCompare()
 }
 
 execute()
